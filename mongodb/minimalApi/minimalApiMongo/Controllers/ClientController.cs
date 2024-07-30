@@ -28,7 +28,7 @@ namespace minimalApiMongo.Controllers
 
                 foreach (var item in client)
                 {
-                    item.User =  await _users.Find(z=>true).FirstOrDefaultAsync();
+                    item.User =  await _users.Find(z=>z.Id == item.UserId).FirstOrDefaultAsync();
                 }
 
                 return Ok(client);
@@ -71,7 +71,7 @@ namespace minimalApiMongo.Controllers
 
                 await _clients.InsertOneAsync(client);
 
-                client.User = _users.Find(z => z.Id == user.Id).FirstOrDefault();
+                client.User = user;
 
                 return Ok(client);
             }

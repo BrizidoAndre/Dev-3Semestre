@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("minimalApiMongo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c591c0e54c6437279d37bb1902d39bc6459dd9f")]
 [assembly: System.Reflection.AssemblyProductAttribute("minimalApiMongo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("minimalApiMongo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

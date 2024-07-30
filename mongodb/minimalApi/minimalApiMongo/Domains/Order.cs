@@ -23,19 +23,28 @@ namespace minimalApiMongo.Domains
         public string? Status { get; set; }
 
 
-        [BsonElement("userId")]
-        public string? UserId { get; set; }
+        [BsonElement("clientId")]
+        public string? ClientId { get; set; }
 
         [BsonIgnoreIfDefault]
-        public User? User { get; set; }
+        public Client? Client { get; set; }
 
 
-        [BsonElement("products")]
-        public List<Product>? Products { get; set; }
+        //Referencias aos produtos do pedido
 
+        //Referência para que eu consiga cadastrar um pedido com os produtos
 
-        public Order() { 
-            Products = new List<Product>();
+        [BsonIgnoreIfDefault]
+        [BsonElement("productId")]
+        public List<string> ProductId { get; set; }
+
+        // referência para que quando eu liste os pedidos, venham os dados de cada produto(lista)
+        [BsonIgnoreIfDefault]
+        public List<Product>? Product { get; set; }
+
+        public Order()
+        {
+            Product = new List<Product>();
         }
 
     }
