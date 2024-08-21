@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+:root{
+  --purple:#8758FF;
+  --black:#1E123B;
+  --white:#FCFCFC;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Lato';
+  color: var(--white);
+}
+
+.text-purple{
+  color: var(--purple);
+}
+
+main{
+  width: 100%;
+  min-height: 100vh;
+  background:var(--purple);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+
+.main-list{
+  width:50%;
+  min-height: 500px;
+  border-radius: 8px;
+  background: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.container-button{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.label-search{
+  width: 50%;
+  border-radius: 8px;
+  border:2px solid var(--white);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin:30px auto 70px auto;
+}
+
+label input{
+  width: 90%;
+  background:transparent;
+  border:none;
+  outline: none;
+  text-align: end;
+}
+
+label input::placeholder{
+  color:var(--white);
+}
+
+.container-tasks{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.button-new{
+  border:2px solid var(--white);
+  background:transparent;
+  border-radius: 8px;
+  padding: 12px 40px;
+  font-family: 'Lato';
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button-new:focus{
+  border-width: 3px;
+}

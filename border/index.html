@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="button-container">
+            <div class="background-border"></div>
+            <div class="button" id="buttom-ref">Button</div>
+        </div>
+    </div>
+    <script>
+        let button = document.getElementById('buttom-ref')
+
+        button.addEventListener('click',()=>{
+            button.classList.toggle('red')
+            alert('Erro')
+        })
+    </script>
+</body>
+</html>

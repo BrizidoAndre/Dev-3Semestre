@@ -1,0 +1,59 @@
+.container-task{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding:15px;
+    background:var(--white);
+    color:var(--black);
+}
+
+.container-task svg{
+    fill: var(--black);
+}
+
+.container-task .container-task-input label{
+    color: var(--black);
+}
+
+.container-task-input{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;;
+}
+
+.container-actions button{
+    padding:12px;
+    background:transparent;
+    border:2px solid var(--black);
+    border-radius: 8px;
+    aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
+}
+
+
+.checked{
+    background:var(--purple);
+    color: var(--white);
+}
+
+.checked .container-task-input label{
+    color: var(--white);
+}
+
+.checked button{
+    border: 2px solid var(--white);
+}
+
+.checked svg{
+    fill: var(--white);
+}
